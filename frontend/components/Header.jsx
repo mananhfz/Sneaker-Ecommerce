@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import styles from "../styles/Header.module.css";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
 import { useNavigate, Link } from "react-router-dom";
 import { Box } from "@mui/material";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import GoBackBtn from "./GoBackBtn";
 import { useEffect } from "react";
 import { fetchAvatar } from "../utils/api/fetchAvatar";
+import styles from "../styles/Header.module.css";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+
 
 
 function Navbar({ accessToken, profileData, setProfileData }) {
