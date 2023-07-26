@@ -47,9 +47,9 @@ function Navbar({ accessToken, profileData, setProfileData }) {
         <p style={{ fontFamily: "Logo", fontSize: "1rem" }}>Sneakers</p>
         <ul style={{ fontFamily: "PoppinsThin" }} className={styles.list}>
           <Link to='/home' style={{ textDecoration: "none", color: "black" }}><li>Home</li></Link>
+          <Link to='/about' style={{ textDecoration: "none", color: "black" }}><li>About</li></Link>
           <Link to='/Cart' style={{ textDecoration: "none", color: "black" }}><li>Cart</li></Link>
           <Link to='/profile' style={{ textDecoration: "none", color: "black" }}><li>Profile</li></Link>
-          <Link to='/about' style={{ textDecoration: "none", color: "black" }}><li>About</li></Link>
           {
             !profileImage ?
               <div style={{ display: "flex" }}>
@@ -92,11 +92,11 @@ function Navbar({ accessToken, profileData, setProfileData }) {
         {
           profileImage ?
             <img
-              onClick={handleClick}
               src={profileImage}
               width="40"
               className={styles.cart}
-            />
+              onClick={handleClick}
+              />
             :
             <img
               width="40"
